@@ -16,7 +16,7 @@ drawpad = Canvas(root, width=800,height=600, background='white')
 player = drawpad.create_oval(390,580,410,600, fill="red")
 
 # Create your "enemies" here, before the class
-
+enemy = drawpad.create_rectangle(10,10,40,40, fill="blue")
 
 class MyApp:
 	def __init__(self, parent):
@@ -54,7 +54,8 @@ class MyApp:
 	    global drawpad
 	    global player
 	    # Remember to include your "enemies" with "global"
-	    
+	    global enemy1
+
 	    # Uncomment this when you're ready to test out your animation!
 	    #drawpad.after(10,self.animate)
 		
